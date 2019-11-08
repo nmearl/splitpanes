@@ -1,0 +1,21 @@
+extension_name: splitpanes
+
+entry: components/splitpanes/index.js
+
+# vuetify | bootstrapvue
+component_library_used: vuetify
+
+components:
+  Splitpanes:
+    properties:
+      # name: type.
+      # - name in snake_case
+      # - type: String | Integer | Float | Boolean | Object | Array | Any
+      horizontal: Boolean
+      push_other_panes: Boolean
+      dbl_click_splitter: Boolean
+  Pane:
+    properties:
+      size: Float
+      min_size: Float
+      max_size: Float

@@ -53,7 +53,8 @@ export default {
         splitters.forEach((splitter) => {
           splitter.ondblclick = undefined
         })
-      }
+      };
+      this.$emit('dbl_click_splitter', enable);
     }
   },
   'methods': {

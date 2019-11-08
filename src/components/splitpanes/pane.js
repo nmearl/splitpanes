@@ -36,19 +36,22 @@ export default {
       this.$parent.requestUpdate({
         'target': this,
         size
-      })
+      });
+      this.$emit('size', size);
     },
     minSizeNumber (min) {
       this.$parent.requestUpdate({
         'target': this,
         min
-      })
+      });
+      this.$emit('min_size', min);
     },
     maxSizeNumber (max) {
       this.$parent.requestUpdate({
         'target': this,
         max
-      })
+      });
+      this.$emit('max_size', max);
     }
   },
   'methods': {
